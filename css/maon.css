@@ -8,7 +8,7 @@
 }
 
 *:focus{
-  outline: 3px dotted ;
+  outline: 3px dotted #ff7500;
   outline-offset: 2px;
 }
 
