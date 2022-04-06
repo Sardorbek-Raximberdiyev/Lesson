@@ -67,6 +67,13 @@ body{
 .sitenav-item-link {
   color: #fff;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sitenav-item-link:hover{
+  border-bottom: 2px solid #fff;
+  border-width: 2px;
 }
 
 .site-hero {
@@ -119,7 +126,9 @@ body{
 
 
 /* SITE-FEATURE  */
-.site-feature {
+
+.site-footer{
+  margin-top: 184px;
 }
 
 .site-feature-box {
@@ -150,20 +159,75 @@ body{
   letter-spacing: 5px;
 }
 
+.site-feature-box-link:hover{
+  color: #fff;
+  background-color: #000;
+}
+
+.site-feature-box-link:active{
+  opacity: 0.6;
+}
+
 .site-feature-list {
   display: flex;
   margin-top: 0;
-  margin-bottom: 184px;
   flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
+  margin-bottom: -30px;
 }
 
 .site-feature-item {
+  background-color: rgba(255, 255, 255, 0.7507);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.site-feature-link{
+  display: inline-block;
   width: 255px;
   padding: 354px 40px 32px;
-  background-color: rgb(117, 185, 227);
-  margin-right: 30px;
+  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-feature-link:hover{
+  opacity: 0.25;
+}
+
+.site-feature-item-one{
+  background-image: url(../images/deep.jpg);
+}
+
+.site-feature-item-two{
+  background-image: url(../images/night_arcade.jpg);
+}
+
+.site-feature-item-three{
+  background-image: url(../images/soccer.jpg);
+}
+
+.site-feature-item-four{
+  background-image: url(../images/the_grid.jpg);
+}
+
+.site-feature-item-five{
+  background-image: url(../images/from.jpg);
+}
+
+.site-feature-item-six{
+  background-image: url(../images/pocket.jpg);
+}
+
+.site-feature-item-seven{
+  background-image: url(../images/the_curriosity.jpg);
+}
+
+.site-feature-item-eight{
+  background-image: url(../images/make.jpg);
 }
 
 .site-feature-item:nth-child(4){
@@ -174,14 +238,10 @@ body{
   margin-right: 0;
 }
 
-.site-feature-item-title {
-  margin: 0;
-  font-size: 32px;
-  line-height: 32px;
-}
 
 
   /* SITE-FOOTER */
+
 .site-footer{
   background-color: #000;
 }
@@ -197,10 +257,11 @@ body{
 .site-footer-logo-link {
   display: flex;
   margin-bottom: 24px;
+  flex-shrink: 0;
 }
 
 .site-footer-logo-img {
-  display: flex ;
+  display: inline;
   width: 144px;
   height: 24px;
 }
@@ -210,10 +271,15 @@ body{
 }
 
 .footer-right-box {
+  display: flex;
+  justify-content: right;
   margin-bottom: 24px;
 }
 
-.site-footer-right-icon-link {
+.site-footer-right-icon-link{
+  display: flex;
+  text-decoration: none;
+  margin-right: 16px;
 }
 
 .site-footer-right-icon-img {
@@ -221,7 +287,12 @@ body{
   height: 24px;
 }
 
+.site-footer-right-icon-link-four{
+  margin-right: 0;
+}
+
 .footer-right-block-text {
+  margin: 0;
   opacity: 0.5;
   font-weight: 400;
 }
@@ -243,4 +314,43 @@ only screen and (                min-resolution: 2dppx) {
   .main-container{
     background-image: url(../images/Bitmap@2x.jpg);
   }
+
+
+.site-feature-item-one{
+  background-image: url(../images/deep@2x.jpg);
+}
+
+
+.site-feature-item-two{
+  background-image: url(../images/night_arcade@2x.jpg);
+}
+
+
+.site-feature-item-three{
+  background-image: url(../images/soccer@2x.jpg);
+}
+
+
+.site-feature-item-four{
+  background-image: url(../images/the_grid@2x.jpg);
+}
+
+
+.site-feature-item-five{
+  background-image: url(../images/from@2x.jpg);
+}
+
+
+.site-feature-item-six{
+  background-image: url(../images/pocket@2x.jpg);
+}
+
+
+.site-feature-item-seven{
+  background-image: url(../images/the_curriosity@2x.jpg);
+}
+
+.site-feature-item-eight{
+  background-image: url(../images/make@2x.jpg);
+}
 }
