@@ -86,11 +86,11 @@ body{
 }
 
 .sitenav-item-link:hover{
-  border-bottom: 2px solid #fff;
+  opacity: 0.8;
 }
 
 .sitenav-item-link:active{
-  opacity: 0.6;
+  border-bottom: 2px solid #fff;
 }
 
 .site-hero {
@@ -221,7 +221,11 @@ body{
 }
 
 .site-feature-link:hover{
-  opacity: 0.25 ;
+  opacity: 0.8;
+}
+
+.site-feature-link:active{
+  opacity: 0.25;
 }
 
 .site-feature-item-one{
