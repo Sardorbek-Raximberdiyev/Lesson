@@ -1,3 +1,8 @@
+:root{
+  --title-font: "Josefin Sans", "Arial", sans-serif;
+  --text-font: "Alata", "Arial", sans-serif
+}
+
 *{
   box-sizing: border-box;
 }
@@ -47,6 +52,14 @@ body{
   display: flex;
 }
 
+.site-header-logo-link:hover{
+  opacity: 0.8;
+}
+
+.site-header-logo-link:active{
+  opacity: 0.6;
+}
+
 .site-header-logo-img {
   width: 192px;
   height: 32px;
@@ -66,6 +79,7 @@ body{
 
 .sitenav-item-link {
   color: #fff;
+  font-family: var(--text-font);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -73,7 +87,10 @@ body{
 
 .sitenav-item-link:hover{
   border-bottom: 2px solid #fff;
-  border-width: 2px;
+}
+
+.sitenav-item-link:active{
+  opacity: 0.6;
 }
 
 .site-hero {
@@ -86,6 +103,7 @@ body{
   width: 650px;
   margin: 0;
   padding: 40px;
+  font-family: var(--title-font);
   font-size: 72px;
   line-height: 70px;
   font-weight: 300;
@@ -113,6 +131,7 @@ body{
 .site-interaktiv-title {
   margin-top: 0;
   margin-bottom: 25px;
+  font-family: var(--title-font);
   font-size: 48px;
   line-height: 48px;
   font-weight: 300;
@@ -122,6 +141,7 @@ body{
 .site-interaktiv-text{
   margin: 0;
   opacity: 0.5;
+  font-family: var(--text-font);
 }
 
 
@@ -140,6 +160,7 @@ body{
 
 .site-feature-box-title {
   margin: 0;
+  font-family: var(--title-font);
   font-size: 48px;
   line-height: 48px;
   font-weight: 300;
@@ -151,12 +172,14 @@ body{
   padding: 13px 40px;
   border: 1px solid #000;
   color: #000;
+  font-family: var(--text-font);
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 5px;
+  transition: all 0.4s ease;
 }
 
 .site-feature-box-link:hover{
@@ -188,14 +211,16 @@ body{
   width: 255px;
   padding: 354px 40px 32px;
   margin: 0;
+  font-family: var(--title-font);
   font-size: 32px;
   line-height: 32px;
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .site-feature-link:hover{
-  opacity: 0.25;
+  opacity: 0.25 ;
 }
 
 .site-feature-item-one{
@@ -255,13 +280,19 @@ body{
 }
 
 .site-footer-logo-link {
-  display: flex;
+  display: inline-flex;
   margin-bottom: 24px;
-  flex-shrink: 0;
+}
+
+.site-footer-logo-link:hover{
+  opacity: 0.8;
+}
+
+.site-footer-logo-link:active{
+  opacity: 0.6;
 }
 
 .site-footer-logo-img {
-  display: inline;
   width: 144px;
   height: 24px;
 }
@@ -282,6 +313,14 @@ body{
   margin-right: 16px;
 }
 
+.site-footer-right-icon-link:hover{
+  opacity: 0.8;
+}
+
+.site-footer-right-icon-link:active{
+  opacity: 0.6;
+}
+
 .site-footer-right-icon-img {
   width: 24px;
   height: 24px;
@@ -294,6 +333,7 @@ body{
 .footer-right-block-text {
   margin: 0;
   opacity: 0.5;
+  font-family: var(--text-font);
   font-weight: 400;
 }
 
