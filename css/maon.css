@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: 3px dotted #0A775F;
+  outline-offset: 2px;
+}
+
+body{
+  /* height: 100%; */
+  color: #fff;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.container{
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wrapper {
+  background-image: url(../images/Bitmap-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-header {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.news-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-logo-link {
+  display: flex;
+}
+
+.site-header-logo-img {
+  width: 192px;
+  height: 32px;
+}
+
+
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.sitenav-item {
+  margin-left: 32px;
+}
+
+.sitenav-item-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-hero {
+  padding-top: 66px;
+  padding-bottom: 146px;
+  margin-bottom: 160px;
+}
+
+.site-hero-heading {
+  width: 650px;
+  margin: 0;
+  padding: 40px;
+  font-size: 72px;
+  line-height: 70px;
+  font-weight: 300;
+  border: 2px solid white;
+  text-transform: uppercase;
+}
+
+.main-container{
+  padding-top: 183px;
+  padding-left: 570px;
+  background-image: url(../images/Bitmap.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 184px;
+}
+
+.site-interaktiv {
+  margin: 0;
+  padding-top: 96px;
+  padding-left: 96px;
+  width: 541px;
+  background-color: #fff;
+  color: #000;
+}
+
+.site-interaktiv-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.site-interaktiv-text{
+  margin: 0;
+  opacity: 0.5;
+}
+
+
+/* SITE-FEATURE  */
+.site-feature {
+}
+
+.site-feature-box {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-feature-box-title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #000;
+  margin-right: 10px;
+}
+
+.site-feature-box-link {
+  padding: 13px 40px;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.site-feature-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 184px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-feature-item {
+  width: 255px;
+  padding: 354px 40px 32px;
+  background-color: rgb(117, 185, 227);
+  margin-right: 30px;
+}
+
+.site-feature-item:nth-child(4){
+  margin-right: 0;
+}
+
+.site-feature-item:nth-child(8){
+  margin-right: 0;
+}
+
+.site-feature-item-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+
+  /* SITE-FOOTER */
+.site-footer{
+  background-color: #000;
+}
+
+.footer-container {
+  display: flex;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-logo-link {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.site-footer-logo-img {
+  display: flex ;
+  width: 144px;
+  height: 24px;
+}
+
+.sitenav-item-footer {
+  margin-right: 32px;
+}
+
+.footer-right-box {
+  margin-bottom: 24px;
+}
+
+.site-footer-right-icon-link {
+}
+
+.site-footer-right-icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-right-block-text {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+
+
+/* RETINA EKRAN  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .wrapper{
+    background-image: url(../images/Bitmap-hero@2x.jpg);
+  }
+
+  .main-container{
+    background-image: url(../images/Bitmap@2x.jpg);
+  }
+}
