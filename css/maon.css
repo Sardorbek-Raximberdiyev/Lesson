@@ -8,7 +8,7 @@
 }
 
 *:focus{
-  outline: 3px dotted #0A775F;
+  outline: 3px dotted ;
   outline-offset: 2px;
 }
 
@@ -166,6 +166,7 @@ body{
   font-weight: 300;
   color: #000;
   margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .site-feature-box-link {
